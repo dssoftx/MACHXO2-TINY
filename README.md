@@ -31,7 +31,7 @@ openFPGALoader -c ft2232 -f blinky.jed   # write to internal flash
 Build bitstreams in Lattice Diamond, starting from `rtl/blinky.v` and `rtl/blinky.lpf`.
 
 ## Bring-up
-1. Inspect the TQFP pins for solder bridges.
+1. Inspect the TQFP pins for solder bridges (ideally assemble with JLC, BOM Coming)
 2. Measure 3V3 to GND. It must not read as a short.
 3. Plug in USB. The PWR LED should light and C17 should read 3.3 V.
 4. Run `openFPGALoader --detect` and check that the FPGA is found.
